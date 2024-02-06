@@ -18,7 +18,7 @@ def remove_duplicate_urls(file_path):
             file.write(url)
 def get_data(file_path):
     with open(file_path, "r") as file:
-        urls = file.readlines()[:10]
+        urls = file.readlines()
 
     for url in urls:
         singlePageDetail = SinglePageDetails(url)
